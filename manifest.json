@@ -1,0 +1,15 @@
+{
+  "name": "Account Switcher",
+  "version": "1.0",
+  "description": "Easily switch between multiple logged-in Google accounts with a keyboard shortcut",
+  "manifest_version": 2,
+  "content_scripts": [
+   {
+     "matches": ["https://*.google.com/*"],
+     "js": ["content.js"]
+   }
+ ],
+  "permissions": [
+    "activeTab"
+  ]
+}
